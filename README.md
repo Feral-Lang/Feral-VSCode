@@ -1,2 +1,3 @@
-# Feral-VSCode
-Visual Studio Code's syntax highlighting extension for Feral
+# Feral Language syntax highlighting extension for VS Code
+
+Installation can be done by cloning this repository and copying the directory to `$HOME/.vscode/extensions/`.
