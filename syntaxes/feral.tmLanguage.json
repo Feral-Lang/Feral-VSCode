@@ -102,7 +102,7 @@
 		},
 		"functions": {
 			"patterns": [{
-				"match": "[\\s\\.]*\\b([_\\w]+)\\b[\\s]*\\(",
+				"match": "[\\s\\.]*\\b(?:fn)([_\\w]+)\\b[\\s]*\\(",
 				"captures": {
 					"1": {
 						"name": "variable.language"
@@ -112,8 +112,12 @@
 		},
 		"atoms": {
 			"patterns": [{
-				"name": "entity.name.tag",
-				"match": "(^|[\\s]+)\\.[a-zA-Z0-9_]+"
+				"match": "(?:^|[\\s\\(]+)(\\.[a-zA-Z0-9_]+)",
+				"captures": {
+					"1": {
+						"name": "entity.name.tag"
+					}
+				}
 			}]
 		},
 		"struct_types": {
