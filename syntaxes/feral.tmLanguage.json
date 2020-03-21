@@ -102,7 +102,7 @@
 		},
 		"functions": {
 			"patterns": [{
-				"match": "[\\s\\.]*\\b(?:fn)([_\\w]+)\\b[\\s]*\\(",
+				"match": "[\\s\\.]*\\b((?!fn)[_\\w]+)\\b[\\s]*\\(",
 				"captures": {
 					"1": {
 						"name": "variable.language"
