@@ -47,20 +47,8 @@
 				"match": "\\b(true|false|nil)\\b"
 			},
 			{
-				"name": "markup.bold",
+				"name": "entity.name.class",
 				"match": "\\b(self)\\b"
-			},
-			{
-				"comment": "structures",
-				"match": "\\b(struct)\\b[\\s]+\\b(.*)\\b",
-				"captures": {
-					"1": {
-						"name": "keyword.control.feral"
-					},
-					"2": {
-						"name": "entity.name.tag"
-					}
-				}
 			}]
 		},
 		"strings": {
