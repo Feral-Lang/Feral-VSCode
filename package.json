@@ -1,25 +1,38 @@
 {
     "name": "feral",
-    "displayName": "feral-vscode",
+    "displayName": "Feral",
     "description": "Language syntax support for Feral",
     "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Feral-Lang/Feral-VSCode.git"
+    },
     "engines": {
-        "vscode": "^1.41.0"
+        "vscode": "^1.76.0"
     },
     "categories": [
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "feral",
-            "aliases": ["Feral", "feral"],
-            "extensions": [".fer"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "feral",
-            "scopeName": "source.fer",
-            "path": "./syntaxes/feral.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "feral",
+                "aliases": [
+                    "Feral",
+                    "feral"
+                ],
+                "extensions": [
+                    ".fer"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "feral",
+                "scopeName": "source.fer",
+                "path": "./syntaxes/feral.tmLanguage.json"
+            }
+        ]
     }
 }
