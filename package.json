@@ -22,7 +22,8 @@
                     "feral"
                 ],
                 "extensions": [
-                    ".fer"
+                    ".fer",
+                    ".fecl"
                 ],
                 "configuration": "./language-configuration.json"
             }
