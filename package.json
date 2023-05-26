@@ -2,7 +2,8 @@
     "name": "feral",
     "displayName": "Feral",
     "description": "Language syntax support for Feral",
-    "version": "0.0.1",
+    "version": "0.1.0",
+    "publisher": "electrux",
     "repository": {
         "type": "git",
         "url": "https://github.com/Feral-Lang/Feral-VSCode.git"
@@ -22,7 +23,8 @@
                     "feral"
                 ],
                 "extensions": [
-                    ".fer"
+                    ".fer",
+                    ".fecl"
                 ],
                 "configuration": "./language-configuration.json"
             }
