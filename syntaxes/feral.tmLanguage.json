@@ -21,6 +21,9 @@
 			"include": "#functions"
 		},
 		{
+			"include": "#fields"
+		},
+		{
 			"include": "#atoms"
 		},
 		{
@@ -110,6 +113,18 @@
 				}
 			]
 		},
+		"fields": {
+			"patterns": [
+				{
+					"match": "(\\b[_\\w]+\\b)\\.",
+					"captures": {
+						"1": {
+							"name": "entity.name.function"
+						}
+					}
+				}
+			]
+		},
 		"atoms": {
 			"patterns": [
 				{
@@ -126,7 +141,7 @@
 			"patterns": [
 				{
 					"name": "storage.modifier",
-					"match": "\\b[a-zA-Z0-9_]+_t\\b"
+					"match": "\\b[a-zA-Z0-9_]+Ty\\b"
 				}
 			]
 		},
